@@ -1,13 +1,21 @@
 int RedPin;
 int GreenPin;
 int BluePin;
+bool rpiON = false;
 void setup() {
   pinMode(10, INPUT);
   pinMode(13, OUTPUT);
+  pinMode(0,OUTPUT);
+  pinMode(2, INPUT);
   Serial.begin(115200);
 }
 
 void loop() {
+  if (digitalRead(2) == HIGH && rpiON){
+    digitalWrite(0,HIGH);
+  }else if (digitalRead(2) == LOW && !rpiON){
+    digitalWrite(0,LOW);
+  }
   while (Serial.available() > 0) {
     switch (Serial.parseInt()) {
       case 0:

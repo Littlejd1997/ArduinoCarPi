@@ -14,3 +14,4 @@ class Arduino:
 	def lightRGB(self,R,G,B):
 		self.socket.write("2 "+str(R)+" "+str(G)+" "+str(B)+"\n");
 
+
