@@ -3,6 +3,7 @@ class Arduino:
 	def __init__(self, port):
 		self.port = port;
 		self.socket = serial.Serial(self.port);
+		self.socket.baudrate = 115200
 		self.R = 0
 		self.G = 0
 		self.B = 0;
