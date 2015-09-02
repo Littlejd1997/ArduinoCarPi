@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "fade.py", line 24, in <module>
+    sleep(0.5)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "fade.py", line 24, in <module>
+    sleep(0.5)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "fade.py", line 24, in <module>
+    sleep(0.1)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "fade.py", line 24, in <module>
+    sleep(0.05)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "fade.py", line 39, in <module>
+    sleep(0.05)
+KeyboardInterrupt
+Unhandled exception in thread started by <function checkKey at 0xb6cb86f0>
++ / - = Increase / Decrease brightness
+p / r = Pause / Resume
+c = Abort Program
+Traceback (most recent call last):
+  File "fading.py", line 99, in checkKey
+    c = getCh()
+  File "fading.py", line 81, in getCh
+    old_settings = termios.tcgetattr(fd)
+termios.error: (25, 'Inappropriate ioctl for device')
+Traceback (most recent call last):
+  File "fading.py", line 160, in <module>
+    setLights(BLUE_PIN, b)
+  File "fading.py", line 76, in setLights
+    pin(int(realBrightness))
+  File "/home/pi/CarPi/ArduinoCarPi/ArduinoCarPi.py", line 40, in setB
+    self.socket.write(message);
+KeyboardInterrupt
+Unhandled exception in thread started by <function checkKey at 0xb6c7b6f0>
++ / - = Increase / Decrease brightness
+p / r = Pause / Resume
+c = Abort Program
+Traceback (most recent call last):
+  File "fading.py", line 99, in checkKey
+    c = getCh()
+  File "fading.py", line 81, in getCh
+    old_settings = termios.tcgetattr(fd)
+termios.error: (25, 'Inappropriate ioctl for device')
